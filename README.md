@@ -11,7 +11,9 @@ El proyecto contiene de dos POST en la cual uno realiza el calculo de un tipo de
 - Docker
 ## Instalación
 Ejecutar los siguientes comandos
+
 `'mvn clean'`       
+
  `'mvn install'`    
 ## Despligue
 Ejecutar
