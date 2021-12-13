@@ -1,0 +1,24 @@
+spring:  
+  profiles:
+    active: dev
+
+logging:
+  level:
+    com.banco.exam: DEBUG
+
+
+---
+spring:
+    profiles: dev
+    h2:
+      console:
+        enabled: true
+    datasource:
+      driverClassName: org.h2.Driver
+      url: jdbc:h2:mem:user
+      username: sa
+      password: 
+    jpa:
+      show_sql: true
+      hibernate:
+        ddl-auto: none

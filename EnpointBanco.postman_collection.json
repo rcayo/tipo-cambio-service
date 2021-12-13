@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "d267fcd4-14ea-40e9-885e-402df7fc3c46",
+		"name": "EnpointBanco",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "calcular",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"monto\" : 100.0,\r\n    \"monedaOrigen\" : \"dolar\",\r\n    \"monedaDestino\" : \"EURO\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/calcular",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"calcular"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"monedaOrigen\" : \"DOLAR\",\r\n    \"monedaDestino\" : \"EURO\",\r\n    \"nuevoTipoCambio\":  0.6\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/actualizar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"actualizar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
